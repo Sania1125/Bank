@@ -1,0 +1,112 @@
+/* Reset & font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Backgrounds for each page */
+body.home-page {
+  background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.services-page {
+  background-image: url('https://images.unsplash.com/photo-1625821262052-8ba8c91561af?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.loans-page {
+  background-image: url('https://images.unsplash.com/photo-1588776814546-2ba6aa0f1f99?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.about-page {
+  background-image: url('https://images.unsplash.com/photo-1612831669240-4202d53c8588?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.contact-page {
+  background-image: url('https://images.unsplash.com/photo-1590650046871-bd6f4c8b6a5f?auto=format&fit=crop&w=1600&q=80');
+}
+
+/* Header and nav */
+header {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* Common content boxes */
+.home, .page, .form, .accounts {
+  background: rgba(255,255,255,0.88);
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 12px;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Buttons & inputs */
+.form input, .form button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #03a9f4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #0288d1;
+}
+
+/* Account list */
+.accounts ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+/* Message display */
+#message {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Call-to-action button on homepage */
+.cta-button {
+  background-color: #ff9800;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #fb8c00;
+}
