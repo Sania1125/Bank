@@ -9,7 +9,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #000;
+  color: #1a1a1a;
 }
 
 /* -----------------------
@@ -20,7 +20,7 @@ body.home-page {
 }
 
 body.services-page {
-  background-image: url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1600&q=80');
 }
 
 body.loans-page {
@@ -39,15 +39,16 @@ body.contact-page {
    Header & Navigation
 ------------------------ */
 header {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 20px;
+  color: #fff;
 }
 
 header h1 {
-  margin: 0;
   font-size: 2rem;
-  color: #ffffff;
+  color: #f2f2f2;
+  margin: 0;
 }
 
 nav {
@@ -55,32 +56,30 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: #f2f2f2;
   text-decoration: none;
   margin: 0 15px;
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 1.05rem;
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: #ffd700;
 }
 
 /* -----------------------
-   Clean Content Sections
+   Form & Content Box
 ------------------------ */
-.container,
-.main-content,
-.form-section,
 .form,
-.accounts,
-.page {
-  background: rgba(255, 255, 255, 0.92);
+.page,
+.accounts {
+  background-color: rgba(255, 255, 255, 0.95);
   padding: 30px;
   border-radius: 12px;
-  max-width: 850px;
+  max-width: 750px;
   margin: 40px auto;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  text-align: left;
 }
 
 /* -----------------------
@@ -88,50 +87,52 @@ nav a:hover {
 ------------------------ */
 input, textarea {
   width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  font-size: 16px;
-  border-radius: 6px;
+  padding: 10px 12px;
+  margin: 8px 0;
+  font-size: 1rem;
   border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-button, .btn {
-  background-color: #0077cc;
+button {
+  background-color: #007acc;
   color: white;
-  padding: 12px 20px;
-  font-weight: bold;
+  padding: 10px 16px;
+  margin: 10px 5px 0 0;
+  font-weight: 600;
   border: none;
   border-radius: 6px;
-  margin: 8px 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-button:hover, .btn:hover {
+button:hover {
   background-color: #005fa3;
 }
 
 /* -----------------------
-   Account Section & Message
+   Message & List
 ------------------------ */
-.accounts ul {
-  list-style: none;
-  padding: 0;
-  color: #333;
-  font-size: 16px;
-}
-
-#message, #notification {
+#message {
+  margin-top: 10px;
   font-weight: bold;
-  margin-top: 15px;
   color: #d32f2f;
 }
 
+.accounts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.accounts li {
+  margin-bottom: 5px;
+}
+
 /* -----------------------
-   Footer (if used)
+   Footer
 ------------------------ */
 footer {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
   color: #ccc;
   text-align: center;
   padding: 15px;
@@ -139,11 +140,4 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-
-/* -----------------------
-   Headings
------------------------- */
-h1, h2, h3 {
-  color: #003366;
 }
