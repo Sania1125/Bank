@@ -26,6 +26,37 @@ body.home-page {
 body.services-page {
   background-image: url('https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&w=1600&q=80');
 }
+/* Page-specific background images */
+body.home-page {
+  background-image: url('https://images.unsplash.com/photo-1588776814546-2ba6aa0f1f99?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.services-page {
+  background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d4?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.loans-page {
+  background-image: url('https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.about-page {
+  background-image: url('https://images.unsplash.com/photo-1612831455543-7c6b5c7040ed?auto=format&fit=crop&w=1600&q=80');
+}
+
+body.contact-page {
+  background-image: url('https://images.unsplash.com/photo-1521790797524-b2497295b8a0?auto=format&fit=crop&w=1600&q=80');
+}
+
+/* Shared background styling */
+body.home-page,
+body.services-page,
+body.loans-page,
+body.about-page,
+body.contact-page {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 body.loans-page {
   background-image: url('https://images.unsplash.com/photo-1580502300918-99c837cb0413?auto=format&fit=crop&w=1600&q=80');
