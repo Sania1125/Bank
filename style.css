@@ -1,134 +1,159 @@
-/* -----------------------
-   Global Styles
------------------------- */
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  min-height: 100vh;
-  color: #333;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
 }
 
-/* Page-specific backgrounds */
-body.home-page {
-  background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80');
+/* Container for page layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-body.services-page {
-  background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d4?auto=format&fit=crop&w=1600&q=80');
-}
-
-body.loans-page {
-  background-image: url('https://images.unsplash.com/photo-1623059405965-92f1520d04e1?auto=format&fit=crop&w=1600&q=80');
-}
-
-body.about-page {
-  background-image: url('https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1600&q=80');
-}
-
-body.contact-page {
-  background-image: url('https://images.unsplash.com/photo-1590650046871-bd6f4c8b6a5f?auto=format&fit=crop&w=1600&q=80');
-}
-
-/* -----------------------
-   Header
------------------------- */
+/* Header and Navigation */
 header {
-  background-color: rgba(0, 0, 0, 0.7);
-  text-align: center;
-  padding: 20px;
+    background-color: #003366;
+    padding: 20px 0;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: #fff;
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 }
 
 nav {
-  margin-top: 10px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    padding: 8px 10px;
+    transition: background 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+    background-color: #00509e;
+    border-radius: 4px;
 }
 
-/* -----------------------
-   Card/Container
------------------------- */
-.container,
-.form,
-.accounts,
-.page {
-  background: rgba(255, 255, 255, 0.95);
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 800px;
-  margin: 40px auto;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+/* Hero Section (for home page) */
+.hero {
+    background: url('bank-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
 }
 
-/* -----------------------
-   Inputs & Buttons
------------------------- */
-input, textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  font-size: 16px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-button, .btn {
-  background-color: #007bff;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 6px;
-  margin: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
 }
 
-button:hover, .btn:hover {
-  background-color: #0056b3;
+/* Page Sections */
+section {
+    padding: 60px 20px;
 }
 
-/* -----------------------
-   Lists & Messages
------------------------- */
-.accounts ul {
-  list-style-type: none;
-  padding: 0;
-  color: #333;
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #003366;
 }
 
-#message, #notification {
-  font-weight: bold;
-  margin-top: 15px;
-  color: #d32f2f;
+/* Cards for services or loans */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
-/* -----------------------
-   Headings
------------------------- */
-h1, h2, h3 {
-  color: #003366;
-  margin-bottom: 20px;
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
 }
 
-h3 {
-  margin-top: 40px;
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact form */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+form button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00509e;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
