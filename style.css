@@ -10,110 +10,114 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Backgrounds for each page */
+/* Backgrounds for each page using class on body tag */
 body.home-page {
-  background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1600&q=80');
 }
 
 body.services-page {
-  background-image: url('https://images.unsplash.com/photo-1625821262052-8ba8c91561af?auto=format&fit=crop&w=1600&q=80');
-}
-
-body.loans-page {
   background-image: url('https://images.unsplash.com/photo-1588776814546-2ba6aa0f1f99?auto=format&fit=crop&w=1600&q=80');
 }
 
+body.loans-page {
+  background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d4?auto=format&fit=crop&w=1600&q=80');
+}
+
 body.about-page {
-  background-image: url('https://images.unsplash.com/photo-1612831669240-4202d53c8588?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1581093588401-9dc248490c63?auto=format&fit=crop&w=1600&q=80');
 }
 
 body.contact-page {
-  background-image: url('https://images.unsplash.com/photo-1590650046871-bd6f4c8b6a5f?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1600&q=80');
 }
 
-/* Header and nav */
+/* Header and nav bar */
 header {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   text-align: center;
   padding: 20px 0;
 }
 
+nav {
+  margin-top: 10px;
+}
+
 nav a {
   color: #fff;
   text-decoration: none;
-  margin: 0 12px;
+  margin: 0 15px;
   font-weight: bold;
+  font-size: 16px;
 }
 
 nav a:hover {
-  color: #ffeb3b;
+  color: #ffc107;
 }
 
-/* Common content boxes */
-.home, .page, .form, .accounts {
-  background: rgba(255,255,255,0.88);
+/* Page container */
+.container {
+  background: rgba(255, 255, 255, 0.9);
   padding: 30px;
-  margin: 40px auto;
+  margin: 50px auto;
   border-radius: 12px;
-  max-width: 600px;
+  max-width: 800px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   text-align: center;
 }
 
-/* Buttons & inputs */
-.form input, .form button {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
+/* Forms */
+input, button {
+  padding: 12px;
+  margin: 8px;
   font-size: 16px;
-  border-radius: 6px;
+  width: 90%;
+  max-width: 300px;
   border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
 button {
-  background-color: #03a9f4;
+  background-color: #007bff;
   color: white;
   border: none;
   cursor: pointer;
-  transition: 0.3s ease;
 }
 
 button:hover {
-  background-color: #0288d1;
+  background-color: #0056b3;
 }
 
-/* Account list */
-.accounts ul {
-  list-style: none;
+/* Lists */
+ul {
+  list-style-type: none;
   padding: 0;
-  text-align: left;
 }
 
-/* Message display */
-#message {
-  font-weight: bold;
-  margin-top: 10px;
+li {
+  margin: 10px 0;
+  font-size: 16px;
 }
 
-/* Call-to-action button on homepage */
+/* CTA Button for homepage */
 .cta-button {
-  background-color: #ff9800;
+  background-color: #28a745;
   color: white;
-  padding: 12px 24px;
+  padding: 14px 28px;
+  font-size: 16px;
   border-radius: 8px;
   text-decoration: none;
-  display: inline-block;
   margin-top: 20px;
+  display: inline-block;
 }
 
 .cta-button:hover {
-  background-color: #fb8c00;
+  background-color: #218838;
 }
 
-body.home-page {
-  background-image: url('https://images.unsplash.com/photo-1588776814546-2ba6aa0f1f99?auto=format&fit=crop&w=1600&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* Message and notification */
+#message, #notification {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
 }
