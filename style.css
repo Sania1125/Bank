@@ -1,34 +1,32 @@
 /* -----------------------
-   Global Reset & Base
+   Global Styles
 ------------------------ */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
   min-height: 100vh;
+  color: #333;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #1a1a1a;
 }
 
-/* -----------------------
-   Page-Specific Backgrounds
------------------------- */
+/* Page-specific backgrounds */
 body.home-page {
   background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80');
 }
 
 body.services-page {
-  background-image: url('https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d4?auto=format&fit=crop&w=1600&q=80');
 }
 
 body.loans-page {
-  background-image: url('https://images.unsplash.com/photo-1588776814546-2ba6aa0f1f99?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1623059405965-92f1520d04e1?auto=format&fit=crop&w=1600&q=80');
 }
 
 body.about-page {
-  background-image: url('https://images.unsplash.com/photo-1612831455543-7c6b5c7040ed?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1600&q=80');
 }
 
 body.contact-page {
@@ -36,19 +34,18 @@ body.contact-page {
 }
 
 /* -----------------------
-   Header & Navigation
+   Header
 ------------------------ */
 header {
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 20px;
-  color: #fff;
 }
 
 header h1 {
-  font-size: 2rem;
-  color: #f2f2f2;
   margin: 0;
+  font-size: 2rem;
+  color: #fff;
 }
 
 nav {
@@ -56,88 +53,82 @@ nav {
 }
 
 nav a {
-  color: #f2f2f2;
+  color: #fff;
   text-decoration: none;
   margin: 0 15px;
   font-weight: 500;
-  font-size: 1.05rem;
 }
 
 nav a:hover {
-  color: #ffd700;
+  text-decoration: underline;
 }
 
 /* -----------------------
-   Form & Content Box
+   Card/Container
 ------------------------ */
+.container,
 .form,
-.page,
-.accounts {
-  background-color: rgba(255, 255, 255, 0.95);
+.accounts,
+.page {
+  background: rgba(255, 255, 255, 0.95);
   padding: 30px;
   border-radius: 12px;
-  max-width: 750px;
+  max-width: 800px;
   margin: 40px auto;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  text-align: left;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* -----------------------
-   Form Fields & Buttons
+   Inputs & Buttons
 ------------------------ */
 input, textarea {
   width: 100%;
-  padding: 10px 12px;
-  margin: 8px 0;
-  font-size: 1rem;
-  border: 1px solid #ccc;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
   border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
-button {
-  background-color: #007acc;
+button, .btn {
+  background-color: #007bff;
   color: white;
-  padding: 10px 16px;
-  margin: 10px 5px 0 0;
-  font-weight: 600;
+  padding: 12px 20px;
   border: none;
   border-radius: 6px;
+  margin: 6px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #005fa3;
+button:hover, .btn:hover {
+  background-color: #0056b3;
 }
 
 /* -----------------------
-   Message & List
+   Lists & Messages
 ------------------------ */
-#message {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #d32f2f;
-}
-
 .accounts ul {
   list-style-type: none;
   padding: 0;
+  color: #333;
 }
 
-.accounts li {
-  margin-bottom: 5px;
+#message, #notification {
+  font-weight: bold;
+  margin-top: 15px;
+  color: #d32f2f;
 }
 
 /* -----------------------
-   Footer
+   Headings
 ------------------------ */
-footer {
-  background-color: rgba(0, 0, 0, 0.75);
-  color: #ccc;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+h1, h2, h3 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 40px;
 }
