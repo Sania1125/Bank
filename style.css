@@ -93,20 +93,26 @@ input, textarea {
   border: 1px solid #ccc;
 }
 
-button {
-  background-color: #007bff;
+.cta-button {
+  background-color: #ff9900;
   color: white;
-  padding: 10px 20px;
-  border: none;
-  font-size: 1rem;
-  border-radius: 6px;
-  margin: 10px 5px 0 0;
-  cursor: pointer;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-button:hover {
-  background-color: #0056b3;
+.cta-button:hover {
+  background-color: #e67e00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
+
 
 /* Special Styles */
 h2, h3, h4 {
