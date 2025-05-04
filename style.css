@@ -1,13 +1,15 @@
-/* Reset & base styles */
+/* -----------------------
+   Global Reset & Base
+------------------------ */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  color: #000;
   min-height: 100vh;
+  color: #fff;
 }
 
-/* Common background style for all pages */
+/* Apply shared background styles */
 body.home-page,
 body.services-page,
 body.loans-page,
@@ -18,25 +20,20 @@ body.contact-page {
   background-repeat: no-repeat;
 }
 
-/* Background images per page */
+/* -----------------------
+   Background Images
+------------------------ */
+
 body.home-page {
-  background-image: url('https://images.unsplash.com/photo-1588776814546-2ba6aa0f1f99?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80');
 }
 
 body.services-page {
-  background-image: url('https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&w=1600&q=80');
-}
-/* Page-specific background images */
-body.home-page {
-  background-image: url('https://images.unsplash.com/photo-1588776814546-2ba6aa0f1f99?auto=format&fit=crop&w=1600&q=80');
-}
-
-body.services-page {
-  background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d4?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1625821262052-8ba8c91561af?auto=format&fit=crop&w=1600&q=80');
 }
 
 body.loans-page {
-  background-image: url('https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1600&q=80');
 }
 
 body.about-page {
@@ -44,109 +41,127 @@ body.about-page {
 }
 
 body.contact-page {
-  background-image: url('https://images.unsplash.com/photo-1521790797524-b2497295b8a0?auto=format&fit=crop&w=1600&q=80');
-}
-
-/* Shared background styling */
-body.home-page,
-body.services-page,
-body.loans-page,
-body.about-page,
-body.contact-page {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-body.loans-page {
-  background-image: url('https://images.unsplash.com/photo-1580502300918-99c837cb0413?auto=format&fit=crop&w=1600&q=80');
-}
-
-body.about-page {
-  background-image: url('https://images.unsplash.com/photo-1620067113383-4495c0af64c3?auto=format&fit=crop&w=1600&q=80');
-}
-
-body.contact-page {
   background-image: url('https://images.unsplash.com/photo-1590650046871-bd6f4c8b6a5f?auto=format&fit=crop&w=1600&q=80');
 }
 
-/* Header */
+/* -----------------------
+   Header & Navigation
+------------------------ */
 header {
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffcc00;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  margin: 0 12px;
+  margin: 0 15px;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 nav a:hover {
-  color: #ffeb3b;
+  color: #ffd700;
 }
 
-/* Main content areas */
-.home, .page, .form, .accounts {
-  background: rgba(255, 255, 255, 0.9);
+/* -----------------------
+   Content Containers
+------------------------ */
+.container, .main-content, .form-section, .accounts {
+  background: rgba(0, 0, 0, 0.6);
   padding: 30px;
-  margin: 40px auto;
   border-radius: 12px;
-  max-width: 600px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   text-align: center;
 }
 
-/* Form inputs & buttons */
-.form input,
-.form button {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  font-size: 16px;
+/* -----------------------
+   Forms & Buttons
+------------------------ */
+input, textarea {
+  padding: 12px;
   border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-button {
-  background-color: #03a9f4;
-  color: white;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
   border: none;
+  font-size: 1rem;
+}
+
+button, .btn {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: background-color 0.3s;
+  margin-top: 10px;
 }
 
-button:hover {
-  background-color: #0288d1;
+button:hover, .btn:hover {
+  background-color: #e6b800;
 }
 
-/* Accounts section */
+/* -----------------------
+   Footer
+------------------------ */
+footer {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+/* -----------------------
+   Lists & Messages
+------------------------ */
 .accounts ul {
   list-style: none;
   padding: 0;
   text-align: left;
+  margin-top: 20px;
+  color: #eee;
 }
 
-/* Messages */
-#message {
+#message, #notification {
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 15px;
+  color: #ffd700;
 }
 
-/* CTA button */
+/* CTA Button */
 .cta-button {
   background-color: #ff9800;
   color: white;
   padding: 12px 24px;
-  border-radius: 8px;
   text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
   display: inline-block;
   margin-top: 20px;
+  transition: 0.3s;
 }
 
 .cta-button:hover {
-  background-color: #fb8c00;
+  background-color: #e68900;
 }
