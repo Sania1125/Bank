@@ -1,39 +1,47 @@
-/* Base layout and fonts */
+/* Reset & base styles */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
   color: #000;
   min-height: 100vh;
+}
+
+/* Common background style for all pages */
+body.home-page,
+body.services-page,
+body.loans-page,
+body.about-page,
+body.contact-page {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Backgrounds for each page */
+/* Background images per page */
 body.home-page {
-  background-image: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80');
-}
-
-body.services-page {
   background-image: url('https://images.unsplash.com/photo-1588776814546-2ba6aa0f1f99?auto=format&fit=crop&w=1600&q=80');
 }
 
+body.services-page {
+  background-image: url('https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&w=1600&q=80');
+}
+
 body.loans-page {
-  background-image: url('https://images.unsplash.com/photo-1567427017947-545c5f8d16d3?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1580502300918-99c837cb0413?auto=format&fit=crop&w=1600&q=80');
 }
 
 body.about-page {
-  background-image: url('https://images.unsplash.com/photo-1611078489935-e7cfa3b5d15e?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1620067113383-4495c0af64c3?auto=format&fit=crop&w=1600&q=80');
 }
 
 body.contact-page {
-  background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1590650046871-bd6f4c8b6a5f?auto=format&fit=crop&w=1600&q=80');
 }
 
-/* Header and nav */
+/* Header */
 header {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -50,19 +58,20 @@ nav a:hover {
   color: #ffeb3b;
 }
 
-/* Common content boxes */
+/* Main content areas */
 .home, .page, .form, .accounts {
-  background: rgba(255,255,255,0.88);
+  background: rgba(255, 255, 255, 0.9);
   padding: 30px;
   margin: 40px auto;
   border-radius: 12px;
   max-width: 600px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-/* Buttons & inputs */
-.form input, .form button {
+/* Form inputs & buttons */
+.form input,
+.form button {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
@@ -83,20 +92,20 @@ button:hover {
   background-color: #0288d1;
 }
 
-/* Account list */
+/* Accounts section */
 .accounts ul {
   list-style: none;
   padding: 0;
   text-align: left;
 }
 
-/* Message display */
+/* Messages */
 #message {
   font-weight: bold;
   margin-top: 10px;
 }
 
-/* Call-to-action button on homepage */
+/* CTA button */
 .cta-button {
   background-color: #ff9800;
   color: white;
