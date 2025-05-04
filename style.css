@@ -1,60 +1,51 @@
-/* ============ Reset and Base ============ */
+
+/* Global Reset & Base */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  color: #fff;
-}/* ============ Reset and Base ============ */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  color: #fff;
+  color: #ffffff; /* Default white text */
 }
 
-/* ============ Page Backgrounds ============ */
+/* Page-Specific Backgrounds */
 body.home-page {
-  background-image: url('images/cf9a8965-372f-4d1b-ac47-86d7b63d5d10.jpeg');
+  background-image: url('images/home.jpeg');
 }
 
 body.services-page {
-  background-image: url('images/75b17da4-33cd-4828-a91d-da686c42c991.jpeg');
+  background-image: url('images/services.jpeg');
 }
 
 body.loans-page {
-  background-image: url('images/16fdc729-0af1-49c7-97b6-e0d35e385722.jpeg');
+  background-image: url('images/loans.jpeg');
 }
 
 body.about-page {
-  background-image: url('images/ac8ebb4f-1758-4008-a949-04f3f6dd6c96.jpeg');
+  background-image: url('images/about.jpeg');
 }
 
 body.contact-page {
-  background-image: url('images/910969e7-99c0-4758-9164-2bb16840aa14.jpeg');
+  background-image: url('images/contact.jpeg');
 }
 
-/* ============ Header ============ */
+/* Header Styling */
 header {
-  background-color: rgba(0, 0, 51, 0.9);
-  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
   text-align: center;
+  padding: 20px;
+  color: #fff;
 }
 
 header h1 {
   margin: 0;
-  color: #00bfff;
   font-size: 2rem;
+  color: #00c8ff;
 }
 
-/* ============ Navigation ============ */
 nav {
   margin-top: 10px;
 }
@@ -65,228 +56,59 @@ nav a {
   margin: 0 15px;
   font-weight: bold;
   font-size: 1.1rem;
-  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: #00c8ff;
 }
 
-/* ============ Main Containers ============ */
-.container, .form, .accounts, .page, main {
-  background-color: rgba(255, 255, 255, 0.93);
-  color: #222;
+/* Section Containers */
+.container, .form, .page, .accounts {
+  background-color: rgba(255, 255, 255, 0.92);
+  color: #111;
   padding: 30px;
   border-radius: 12px;
   max-width: 800px;
   margin: 50px auto;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* ============ Forms ============ */
+/* Inputs & Buttons */
 input, textarea {
-  width: 100%;
   padding: 10px;
-  font-size: 1rem;
-  margin: 10px 0;
   border-radius: 6px;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
   border: 1px solid #ccc;
 }
 
 button {
-  background-color: #0066cc;
-  color: #fff;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
   border: none;
-  padding: 12px 24px;
   font-size: 1rem;
   border-radius: 6px;
-  cursor: pointer;
   margin: 10px 5px 0 0;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #004c99;
+  background-color: #0056b3;
 }
 
-/* ============ Text Enhancements ============ */
-h2, h3 {
+/* Special Styles */
+h2, h3, h4 {
   color: #003366;
+}
+
+ul {
+  color: #222;
 }
 
 #message {
   color: #d32f2f;
   font-weight: bold;
-  margin-top: 15px;
-}
-
-/* ============ CTA Button ============ */
-.cta-button {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 8px;
-  margin-top: 20px;
-  transition: 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #0056b3;
-}
-
-/* ============ Footer (optional) ============ */
-footer {
-  background-color: rgba(0, 0, 0, 0.75);
-  color: #ccc;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-/* ============ Page Backgrounds ============ */
-body.home-page {
-  background-image: url('images/cf9a8965-372f-4d1b-ac47-86d7b63d5d10.jpeg');
-}
-
-body.services-page {
-  background-image: url('images/75b17da4-33cd-4828-a91d-da686c42c991.jpeg');
-}
-
-body.loans-page {
-  background-image: url('images/16fdc729-0af1-49c7-97b6-e0d35e385722.jpeg');
-}
-
-body.about-page {
-  background-image: url('images/ac8ebb4f-1758-4008-a949-04f3f6dd6c96.jpeg');
-}
-
-body.contact-page {
-  background-image: url('images/910969e7-99c0-4758-9164-2bb16840aa14.jpeg');
-}
-
-/* ============ Header ============ */
-header {
-  background-color: rgba(0, 0, 51, 0.9);
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  color: #00bfff;
-  font-size: 2rem;
-}
-
-/* ============ Navigation ============ */
-nav {
   margin-top: 10px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #ffcc00;
-}
-
-/* ============ Main Containers ============ */
-.container, .form, .accounts, .page, main {
-  background-color: rgba(255, 255, 255, 0.93);
-  color: #222;
-  padding: 30px;
-  border-radius: 12px;
-  max-width: 800px;
-  margin: 50px auto;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-}
-
-/* ============ Forms ============ */
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  margin: 10px 0;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-button {
-  background-color: #0066cc;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  margin: 10px 5px 0 0;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #004c99;
-}
-
-/* ============ Text Enhancements ============ */
-h2, h3 {
-  color: #003366;
-}
-
-#message {
-  color: #d32f2f;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-/* ============ CTA Button ============ */
-.cta-button {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 8px;
-  margin-top: 20px;
-  transition: 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #0056b3;
-}
-
-/* ============ Footer (optional) ============ */
-footer {
-  background-color: rgba(0, 0, 0, 0.75);
-  color: #ccc;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-/* ============ Home Page Content Styling ============ */
-body.home-page .home,
-body.home-page .home * {
-  color: #fff;
-}
-
-body.home-page .home {
-  background-color: rgba(0, 0, 0, 0.6); /* optional: adds contrast background */
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-  max-width: 800px;
-  margin: 50px auto;
-  text-align: center;
 }
