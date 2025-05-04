@@ -137,3 +137,18 @@ footer {
   bottom: 0;
   width: 100%;
 }
+/* ============ Home Page Content Styling ============ */
+body.home-page .home,
+body.home-page .home * {
+  color: #fff;
+}
+
+body.home-page .home {
+  background-color: rgba(0, 0, 0, 0.6); /* optional: adds contrast background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
