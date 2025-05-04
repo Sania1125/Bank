@@ -7,9 +7,12 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom right, #f4f6f9, #e8edf3);
   color: #333;
   line-height: 1.6;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
+    url('https://images.unsplash.com/photo-1588776814546-7a50313f0542?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* Header and Navigation */
@@ -44,7 +47,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
-/* Main content (shared) */
+/* Main content (shared layout) */
 main, .page {
   max-width: 960px;
   margin: 60px auto;
@@ -85,7 +88,7 @@ main.page p {
   background-color: #005fa3;
 }
 
-/* Services page form styling */
+/* Services Page: Form Styling */
 .form {
   max-width: 600px;
   margin: 40px auto;
@@ -117,6 +120,7 @@ main.page p {
   background-color: #005fa3;
 }
 
+/* Services: Messages + Summary */
 #message {
   text-align: center;
   color: #0074d9;
@@ -148,16 +152,17 @@ main.page p {
   border-bottom: 1px solid #ccc;
 }
 
-/* Footer (optional if added later) */
+/* Footer */
 footer {
   background-color: #002244;
   color: white;
   text-align: center;
   padding: 20px;
   margin-top: 60px;
+  font-size: 14px;
 }
 
-/* Responsive */
+/* Responsive Layout */
 @media (max-width: 768px) {
   header h1 {
     font-size: 24px;
@@ -175,11 +180,4 @@ footer {
   main, .page {
     margin: 40px auto;
   }
-}
-/* Background image applied to the whole page */
-body {
-  background: 
-    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
-    url('https://images.unsplash.com/photo-1588776814546-7a50313f0542?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-  background-size: cover;
 }
