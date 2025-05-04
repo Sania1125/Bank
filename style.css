@@ -1,17 +1,24 @@
-
-/* Global Reset & Base */
-body {
+/* -----------------------
+   Global Styles & Reset
+------------------------ */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Segoe UI', sans-serif;
   min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #ffffff; /* Default white text */
+  color: #fff;
 }
 
-/* Page-Specific Backgrounds */
+/* -----------------------
+   Page-Specific Backgrounds
+------------------------ */
 body.home-page {
   background-image: url('images/home.jpeg');
 }
@@ -32,22 +39,19 @@ body.contact-page {
   background-image: url('images/contact.jpeg');
 }
 
-/* Header Styling */
+/* -----------------------
+   Header & Navigation
+------------------------ */
 header {
-  background: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
-  padding: 20px;
-  color: #fff;
+  padding: 25px 10px;
 }
 
 header h1 {
-  margin: 0;
   font-size: 2rem;
-  color: #00c8ff;
-}
-
-nav {
-  margin-top: 10px;
+  color: #00cfff;
+  margin-bottom: 10px;
 }
 
 nav a {
@@ -56,75 +60,92 @@ nav a {
   margin: 0 15px;
   font-weight: bold;
   font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #00c8ff;
+  color: #00cfff;
 }
 
-/* Section Containers */
-.container, .form, .page, .accounts {
-  background-color: rgba(255, 255, 255, 0.92);
-  color: #111;
+/* -----------------------
+   Shared Page Box Layout
+------------------------ */
+.page, .form, .accounts, .container {
+  background-color: rgba(0, 30, 60, 0.85);
+  color: #ffffff;
   padding: 30px;
+  margin: 40px auto;
   border-radius: 12px;
   max-width: 800px;
-  margin: 50px auto;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-.hero-overlay {
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
-  padding: 40px;
-  border-radius: 12px;
-  max-width: 800px;
-  margin: 100px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   text-align: center;
-  color: white;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Inputs & Buttons */
+/* -----------------------
+   Inputs and Buttons
+------------------------ */
 input, textarea {
-  padding: 10px;
-  border-radius: 6px;
   width: 100%;
+  padding: 12px;
   margin: 10px 0;
   font-size: 16px;
-  border: 1px solid #ccc;
-}
-
-.cta-button {
-  background-color: #ff9900;
-  color: white;
-  padding: 14px 28px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-decoration: none;
   border-radius: 8px;
-  display: inline-block;
-  margin-top: 20px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: none;
+  background-color: #f1f1f1;
+  color: #000;
 }
 
-.cta-button:hover {
-  background-color: #e67e00;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
-
-
-/* Special Styles */
-h2, h3, h4 {
-  color: #003366;
-}
-
-ul {
-  color: #222;
-}
-
-#message {
-  color: #d32f2f;
+button, .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 5px;
+  font-size: 15px;
   font-weight: bold;
-  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover, .btn:hover {
+  background-color: #0056b3;
+}
+
+/* -----------------------
+   Page Headings
+------------------------ */
+h1, h2, h3 {
+  color: #00cfff;
+  margin-bottom: 20px;
+}
+
+.page h2, .accounts h3 {
+  font-size: 1.5rem;
+}
+
+/* -----------------------
+   Account Summary List
+------------------------ */
+.accounts ul {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 20px;
+  color: #e0f7fa;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+/* -----------------------
+   Footer
+------------------------ */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
