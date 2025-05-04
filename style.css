@@ -78,7 +78,7 @@ nav a:hover {
 /* -----------------------
    Content Containers
 ------------------------ */
-.container, .main-content, .form-section, .accounts {
+.container, .main-content, .form-section, .accounts, .page {
   background: rgba(0, 0, 0, 0.6);
   padding: 30px;
   border-radius: 12px;
@@ -87,6 +87,7 @@ nav a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   text-align: center;
 }
+
 
 /* -----------------------
    Forms & Buttons
